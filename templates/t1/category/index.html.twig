@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ controller_name }}{% endblock %}
+
+{% block body %}
+    <div class="card-columns text-center">
+        {% for p in products %}
+        <div class="card mt-3 shadow-sm my">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">{{ p.name|slice(0,20) }}</h4>
+            </div>
+            <div class="card-body d-flex flex-column">
+                <h1 class="card-title pricing-card-title">{{ p.price }} <small class="text-muted"> грн.</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                    <li>{{ p.name }}</li>
+                </ul>
+                <button type="button" class="mt-auto btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}

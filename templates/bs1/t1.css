@@ -1,0 +1,170 @@
+/* Cards */
+
+.card-columns .card {
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 576px) {
+  .card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+  }
+  .card-columns .card {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-columns {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+  }
+  .card-columns .card {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-columns {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+  }
+  .card-columns .card {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .card-columns {
+    -webkit-column-count: 45
+    -moz-column-count: 5;
+    column-count: 5;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+  }
+  .card-columns .card {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+/* Pagination */
+
+.page-link {
+  color: #343a40;
+}
+
+.page-link:hover {
+  color: #000;
+}
+
+
+/* Navbar */
+
+.dropdown-item:hover, .dropdown-item:focus {
+  color: #16181b;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+/* Navbar Search */
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+
+/* Sidebar */
+
+.sidebar {
+  /* отключаю фиксированную позицию, чтобы учитывало родительский элемент
+  position: fixed;*/
+  /* расстояния от родительского элемента*/
+  top: 0;
+  bottom: 0;
+  left: 0;
+  /* разграничительная полоска 
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1); */
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    display: block !important;
+  }
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+.sidebar .nav-item:hover, .sidebar .nav-item:focus {
+  color: #16181b;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.sidebar-sticky {
+  /* прилепить */
+  position: -webkit-sticky;
+  position: sticky;
+  /* navbar не sticky, поэтому 0 */
+  top: 0px; /* Height of navbar */ 
+  /* высота блока, не вижу необходимости устанавливать без разграничительной полоски
+  height: calc(100vh - 48px);*/
+  /*height: 90%; /* пришлось добавить, иначе после добавления slider'а появлялся скролинг, но начитает непонятно работать sticky */
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+/* Template */
+
+html {
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 1rem;
+  }
+}
+
+.badge {
+  font-size: .60rem;
+}
