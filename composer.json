@@ -3,9 +3,10 @@
     "license": "proprietary",
     "require": {
         "php": "^7.2.5",
+        "ext-amqp": "^1.10",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "ext-intl": "^7.3",
+        "ext-intl": "^7.4",
         "amphp/http-client": "^4.5",
         "composer/package-versions-deprecated": "^1.10",
         "doctrine/annotations": "^1.0",
